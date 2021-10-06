@@ -1,0 +1,68 @@
+.main {
+  height: 100%;
+  border: solid 1px rgb(169, 169, 162);
+  border-top: 0;
+  margin-bottom: 3%;
+  background-color: #fff;
+}
+.main__search-result {
+  padding: 2% 0 2% 3%;
+  font-size: 22px;
+}
+.main__movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.main__post {
+  display: inline-block;
+
+  margin: auto;
+  overflow: hidden;
+  flex: 1 1 calc((100% / 5) - 2rem); //вот тут можно добавить @media меняя 4 на 3 и потом на 2
+}
+.main__post img {
+  display: block;
+  margin: 0 auto;
+  transition: 1s;
+}
+
+.main__post div {
+  text-align: center;
+}
+.main__post img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.main__post div {
+  font-size: 20px;
+  padding: 0 8%;
+}
+.main__movies-list-emrty {
+  padding: 3% 3%;
+  font-size: 22px;
+  border: solid 1px rgb(169, 169, 162);
+  border-top: 0;
+  background-color: #fff;
+}
+
+@media (max-width: 1700px) {
+  .main__post {
+    flex: 1 1 calc((100% / 4) - 2rem);
+  }
+}
+@media (max-width: 1400px) {
+  .main__post {
+    flex: 1 1 calc((100% / 3) - 2rem);
+  }
+}
+@media (max-width: 1100px) {
+  .main__post {
+    flex: 1 1 calc((100% / 2) - 2rem);
+  }
+}
+@media (max-width: 700px) {
+  .main__post {
+    flex: 1 1 calc((100% / 1) - 2rem);
+  }
+}
