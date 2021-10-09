@@ -3,12 +3,12 @@ import Search from "./Search";
 import Users from "./Users";
 import "./header.scss";
 
-export default function Header({ user, searchMovieWord, setSearchMovieWord }) {
+export default function Header({ user, searchMovieWord, setSearchMovieWord, token }) {
   return (
     <div className="header">
       <SiteName />
       <Search searchMovieWord={searchMovieWord} setSearchMovieWord={setSearchMovieWord} />
-      <Users user={user} />
+      <Users token={token} />
     </div>
   );
 }
