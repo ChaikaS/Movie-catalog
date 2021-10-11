@@ -2,7 +2,6 @@
   height: 100%;
   border: solid 1px rgb(169, 169, 162);
   border-top: 0;
-  // margin-bottom: 3%;
   background-color: #fff;
 }
 .main__search-result {
@@ -19,7 +18,7 @@
 
   margin: auto;
   overflow: hidden;
-  flex: 1 1 calc((100% / 5) - 2rem); //вот тут можно добавить @media меняя 4 на 3 и потом на 2
+  flex: 1 1 calc((100% / 5) - 2rem);
 }
 .main__post img {
   display: block;

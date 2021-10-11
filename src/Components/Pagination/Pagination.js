@@ -25,4 +25,3 @@ export default function Pagination({ totalResults, setPageSelection }) {
     </div>
   );
 }
-// git commit -am "optimized app structure. fixed ui. fixed pagination,can wokr with a lot number of pages. fixed preloader."

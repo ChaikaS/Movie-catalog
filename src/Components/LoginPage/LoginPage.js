@@ -16,7 +16,7 @@ export default function LoginPage({ setToken }) {
   return (
     <form className="loginPage__form" onSubmit={handlerSubmit}>
       <div className="loginPage__form_text">
-        <span>Welcom to Movie catalog</span>
+        <span>registration</span>
       </div>
 
       <div className="loginPage__form_input">

@@ -1,12 +1,8 @@
 .loginPage__form {
-  padding: 22% 40% 0 40%;
+  min-width: 30vw;
 }
 .loginPage__form_text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 3%;
+  padding: 5%;
   background-color: aqua;
   border: 0;
   border-radius: 35px;
@@ -25,7 +21,7 @@
 }
 .loginPage__form_button button {
   width: 100%;
-  padding: 3%;
+  padding: 5%;
   background-color: aqua;
   border: 0;
   border-radius: 35px;
@@ -37,40 +33,19 @@
 .loginPage__form_button button:hover {
   background-color: rgb(6, 190, 236);
 }
-@media (max-width: 1700px) {
+
+@media (max-width: 1000px) {
   .loginPage__form_text {
     font-size: 20px;
   }
   .loginPage__form_button button {
     font-size: 20px;
   }
-}
-@media (max-width: 1400px) {
-  .loginPage__form_text {
-    font-size: 15px;
-  }
-  .loginPage__form_button button {
+  .loginPage__form_input input {
     font-size: 15px;
   }
   .loginPage__form_input input {
-    font-size: 12px;
-  }
-  .loginPage__form_input input {
-    height: 26px;
-  }
-}
-@media (max-width: 1100px) {
-  .loginPage__form_text {
-    font-size: 15px;
-  }
-  .loginPage__form_button button {
-    font-size: 15px;
-  }
-  .loginPage__form_input input {
-    font-size: 9px;
-  }
-  .loginPage__form_input input {
-    height: 21px;
+    height: 30px;
   }
 }
 @media (max-width: 700px) {
