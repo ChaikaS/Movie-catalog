@@ -12,9 +12,8 @@ export default function Pagination({ totalResults, setPageSelection }) {
     setCurrentPage(pageNumber);
   };
 
-  for (let i = 1; i <= createPages(numberPages, totalPages, currentPage); i++) {
-    numberPages.push(i);
-  }
+  createPages(numberPages, totalPages, currentPage);
+
   return (
     <div className="main__pagination">
       {numberPages.map((number) => (
